@@ -19,7 +19,7 @@ For example, if two securities returns have a +0.80 correlation, we need to ensu
 
 
 ## Efficient Frontier 
-Modern portfolio theory suggests that we should be compensated for investing in risky assets.  A standard measure of the risk/reward payoff is the sharpe-ratio.  It is a ratio of the expected portfolio return less the return we can expect from a risk-free asset (such as a T-Bill), divided by the expected volatility of the portfolio.  The higher the ratio, the better the risk-adjusted return. 
+Modern portfolio theory suggests that we should be compensated for investing in risky assets.  A standard measure of the risk/reward payoff is the sharpe-ratio.  It is a ratio of the expected portfolio return minus the return we can expect from a risk-free asset (such as a T-Bill), divided by the expected volatility of the portfolio.  The higher the ratio, the better the risk-adjusted return. 
 
 ```sharpe-ratio = (Expected Return - Risk-Free-Rate )/ Expected Volatility```
 
@@ -31,7 +31,7 @@ We can use monte-carlo simulations to find the optimal portfolio from the basket
 + Adjust the 8 security weights by increments of 10% (ie, 0%,10%, 20% 30%)
 + No individual security should have a weight greater than 30% of the portfolio
 + We don't need to hold all eight securities
-+ Simulate each possible weight combination & calculate the expected return, risk, and Sharpe ratio
++ Simulate each possible weight combination & calculate the expected return, risk, and sharpe-ratio
 
 We can see from the plot that we would prefer the portfolios on the top edge as these have greater expected returns per unit of expected risk.  This plot is known as the efficient frontier.  The colors represent the sharpe-ratio
 
@@ -40,7 +40,7 @@ We can see from the plot that we would prefer the portfolios on the top edge as 
 
 
 ### Most Efficient Weights
-The table below shows the weights of the top five portfolios sorted by Sharpe ratio.  As you can see, the simulation revealed that the best risk-adjusted portfolios hold between 4-6 of the 8 securities. 
+The table below shows the weights of the top five portfolios sorted by sharpe-ratio.  As you can see, the simulation revealed that the best risk-adjusted portfolios hold between 4-6 of the 8 securities. 
 
 ![image](https://user-images.githubusercontent.com/1649676/215935819-b8f1c4d2-ce73-4f5e-a314-5f453cce8891.png)
 
@@ -55,7 +55,7 @@ The first plot shows the 2,500 possible paths our portfolio took in the simulati
 
 
 ### Return/Risk Distributions
-The box plots show the distribution of returns and volatility of our portfolio
+The box plots show the distribution of returns and volatility of the portfolio
 
 ![image](https://user-images.githubusercontent.com/1649676/215935930-476ef8bc-76f0-46be-b2ce-83136ebcd6a5.png)
 
@@ -70,7 +70,7 @@ Holdings
 + BMO Aggregate Bond Index:10.0% 
 + Gold ETF:20.0% 
 
-You could also this method to evaluate portfolios with different securities and weights
+You could also use this method to evaluate portfolios with different securities and weights
 
 ![image](https://user-images.githubusercontent.com/1649676/215936001-fc8fb706-6e68-4d74-afb4-7907f1f7c063.png)
 
@@ -97,7 +97,7 @@ A portfolio holds securities at specific weights
 + simulation_results = A dictionary of various outputs from the monte carlo simulation
 + mean_return = Mean return of the portfolio. Calculated by the simulation
 + mean_volatility = Mean standard deviation of returns of the portfolio - calculated by the simulation
-+ sharpe_ratio = sharpe ratio of the portfolio - calculated by the simulation
++ sharpe_ratio = sharpe-ratio of the portfolio - calculated by the simulation
 + expected_values = expected values of the portfolio - calculated by the simulation
 #### Portfolio Methods
 + calc_sharpe_ratio(): Calculate the sharpe-ratio of the portfolio
