@@ -35,14 +35,13 @@ We can use monte-carlo simulations to find the optimal portfolio from the basket
 
 We can see from the plot that we would prefer the portfolios on the top edge as these have greater expected returns per unit of expected risk.  This plot is known as the efficient frontier.  The colors represent the sharpe-ratio
 
-![image](https://user-images.githubusercontent.com/1649676/215935779-b0dfb918-84ea-48d7-be5b-2283c42873ba.png)
-
+![image](https://user-images.githubusercontent.com/1649676/216845740-c0d9067e-4022-4783-8073-d851d4b097bf.png)
 
 
 ### Most Efficient Weights
 The table below shows the weights of the top five portfolios sorted by sharpe-ratio.  As you can see, the simulation revealed that the best risk-adjusted portfolios hold between 4-6 of the 8 securities. 
 
-![image](https://user-images.githubusercontent.com/1649676/215935819-b8f1c4d2-ce73-4f5e-a314-5f453cce8891.png)
+![image](https://user-images.githubusercontent.com/1649676/216845702-0c7e8dc0-86af-4b64-bb53-697f7d99f571.png)
 
 
 ## Monte Carlo Simulation: Expected Risk, Return and Sharpe-Ratio
@@ -51,17 +50,18 @@ We can now select one of the top portfolios and re-run the monte-carlo simulatio
 ### Simulation Paths
 The first plot shows the 2,500 possible paths our portfolio took in the simulation. 
 
-![image](https://user-images.githubusercontent.com/1649676/215935877-7b226d6d-ae27-426f-b4d2-e2457db5a178.png)
+![image](https://user-images.githubusercontent.com/1649676/216846052-2ab2d807-e192-47e4-9796-1c032d34ac6a.png)
 
 
 ### Return/Risk Distributions
-The box plots show the distribution of returns and volatility of the portfolio
+The box plots show the distribution of returns and volatility of the portfolio. The conditional value-at-risk (CVaR) and maximum drawdown distributions provide some insight into the portfolios potential downside.
 
-![image](https://user-images.githubusercontent.com/1649676/215935930-476ef8bc-76f0-46be-b2ce-83136ebcd6a5.png)
+![image](https://user-images.githubusercontent.com/1649676/216846071-527a9b2b-1ae0-49fa-838e-c8634d03b2a3.png)
+![image](https://user-images.githubusercontent.com/1649676/216846086-61980918-28d3-4af5-94fd-d2b8bf7a9e23.png)
 
 
 ### Expected Portfolo Value after 10 Years
-The optimal portfolio has an expected return of 5.77%, a risk of 13.19%, and a sharpe-ratio of 0.13. The portfolio is most likely to have an ending value between $108,642 and $269,370.  This is a large improvement over the starting portfolio of equal-weighted securities. 
+The optimal portfolio has an expected return of 5.51%, a risk of 13.08%, and a sharpe-ratio of 0.12. The portfolio is most likely to have an ending value between $103,268 and $267,331.  This is a large improvement over the starting portfolio of equal-weighted securities. 
 
 Holdings
 + SPDR S&P 500 ETF Trust:30.0% 
@@ -72,7 +72,7 @@ Holdings
 
 You could also use this method to evaluate portfolios with different securities and weights
 
-![image](https://user-images.githubusercontent.com/1649676/215936001-fc8fb706-6e68-4d74-afb4-7907f1f7c063.png)
+![image](https://user-images.githubusercontent.com/1649676/216846107-0d9beec6-0150-479c-849d-c979ec131056.png)
 
 
 
